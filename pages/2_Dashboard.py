@@ -5,7 +5,7 @@ import math
 # ------------------------------
 # Load and clean data
 # ------------------------------
-file_path = "/Users/shrirajaher/SEBIhack/proto3/bond-marketplace/pages/data.csv"
+file_path = "data.csv"
 df = pd.read_csv(file_path)
 
 # Clean messy column names
@@ -73,3 +73,4 @@ page_df["Annual Report URL"] = page_df["Annual Report URL"].apply(
 
 # Display table with Annual Report column
 st.dataframe(page_df, use_container_width=True)
+
